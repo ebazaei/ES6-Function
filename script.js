@@ -10,7 +10,7 @@ let msg = "";
 
 //test3 : ES6 - age & level validator by es6 function & if
 
-test3 = (name, age, level) => {
+const test3 = (name, age, level) => {
     if(age < 18 || level === 'beginner'){
             moreFunction.innerHTML = `Dear ${name} You do not have permission to access this section because: `;
             if( level === 'beginner'){
@@ -46,7 +46,7 @@ test3 = (name, age, level) => {
 // test3("Ali", 19, "perfect");
 // test3("Sara", 15, "perfect");
 // test3("Amir", 21, "beginner");
-test3("Mina", 15, "beginner");
+test3("Mina", 13, "beginner");
 
 
 
