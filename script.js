@@ -2,13 +2,15 @@
 // let es6Function = document.getElementById('es6Function');
 // let oldFunction = document.getElementById('oldFunction');
 let moreFunction = document.getElementById('moreFunction');
+let msg = "";
+
 
 //Function
 //More Practice on functions
 
-//test3 : Age & level validator by classic function & if
-msg = "";
-test3 = function(name, age, level){
+//test3 : ES6 - age & level validator by es6 function & if
+
+test3 = (name, age, level) => {
     if(age < 18 || level === 'beginner'){
             moreFunction.innerHTML = `Dear ${name} You do not have permission to access this section because: `;
             if( level === 'beginner'){
@@ -21,7 +23,25 @@ test3 = function(name, age, level){
     }else{
         moreFunction.innerHTML = `Welcome ${name}`;
     }
-}
+};
+
+//test3 : Classic - age & level validator by classic function & if
+
+
+// test3 = function(name, age, level){
+//     if(age < 18 || level === 'beginner'){
+//             moreFunction.innerHTML = `Dear ${name} You do not have permission to access this section because: `;
+//             if( level === 'beginner'){
+//                 moreFunction.innerHTML += `"Your level is beginner" `;
+//             }if(age < 18 && level === 'beginner'){
+//                 moreFunction.innerHTML += `and`;
+//             }if(age < 18 ){
+//                 moreFunction.innerHTML += ` "Your age is less than 18."`;
+//             }
+//     }else{
+//         moreFunction.innerHTML = `Welcome ${name}`;
+//     }
+// }
 
 // test3("Ali", 19, "perfect");
 // test3("Sara", 15, "perfect");
