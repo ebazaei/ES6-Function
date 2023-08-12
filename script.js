@@ -3,10 +3,21 @@
 // let oldFunction = document.getElementById('oldFunction');
 let moreFunction = document.getElementById('moreFunction');
 let msg = "";
+let funcDef = document.getElementById('funcDef');
+
 
 
 //Function
 //More Practice on functions
+
+//Defualt Parameters
+const test4 = (num1=2 , num2=3) =>{
+    return num1+num2;
+}
+// funcDef.innerHTML = test4(5,4);      // 9
+// funcDef.innerHTML = test4(4);        //4 + Def(3) = 7
+funcDef.innerHTML = test4();            //Def(2) + Def(3) = 5
+
 
 //test3 : ES6 - age & level validator by es6 function & if
 
